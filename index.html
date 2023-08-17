@@ -1,11 +1,64 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de Prueba</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/svg" href="imagenes/dibujo.svg">
 </head>
+
 <body>
-    
+    <main>
+        <div>
+            <h1>Vamos De Viaje</h1>
+            <img src="imagenes/playaNocturna.jpeg" alt="Playa de noche">
+            <div>
+                <img src="imagenes/fondo-form.svg" alt="Figura surrealista">
+                <p>Conocer el mundo, es la mejor manera de vivir! 🌏</p>
+            </div>
+            <p>Entra o crea tu cuenta, para descubrir una nueva forma de viajar 🏄</p>
+            <p>Quedarás sorprendido con todos los lugares que podrás conocer!! 🏝</p>
+        </div>
+        
+        <form action="" method="">
+            <div id="Contenedor de entradas">
+                <label for="nombre">Nombre(s): </label>
+                <input type="text" id="nombre" placeholder="Sof..." name="nombre" required>
+
+                <label for="apellidos">Apellidos: </label>
+                <input type="text" id="apellidos" placeholder="Gonz..." name="apellidos" required>
+
+                <label for="email">Email: </label>
+                <input type="email" id="email" placeholder="adas@sss.com" required>
+
+                <label for="contraseña">Contraseña: </label>
+                <input type="password" id="contraseña" name="contraseña" required>
+
+                <label for="confirmacion-contraseña">Confirmar la contraseña: </label>
+                <input type="password" id="confirmacion-contraseña" name="confirmacion-contraseña" required>
+
+                <label for="telefono">Telefono: </label>
+                <input type="tel" id="telefono" name="telefono" placeholder="1211222..." required>
+
+                <label for="seleccion">Selecciona el continente al que te gustaría viajar.</label>
+                <select name="continente" id="seleccion">
+                    <option value="vacio"></option>
+                    <option value="america">América</option>
+                    <option value="africa">África</option>
+                    <option value="europa">Europa</option>
+                    <option value="asia">Asia</option>
+                    <option value="oceania">Oceanía</option>
+                </select>
+
+                <label for="opiniones">Ayudanos a mejorar, Danos tu opinión</label>
+                <textarea name="opiniones" id="opiniones" cols="30" rows="10"></textarea>
+
+                <button type="submit">Entrar</button>
+                <p>Si no tienes cuenta, <a href=""> <em>crear cuenta nueva.</em></a></p>
+            </div>
+        </form>
+    </main>
 </body>
 </html>
