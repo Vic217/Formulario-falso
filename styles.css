@@ -1,0 +1,148 @@
+/*Estilos para pantallas grandes*/
+
+/* Variables y estilo raíz*/
+:root {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    box-sizing: border-box;
+    --color-bordes-correctos: rgb(30, 234, 12);
+    --color-bordes-incorrectos: rgb(145, 18, 9);
+    --color-borde-en-relleno: rgb(12, 56, 123);
+    --fuente-familia-iz: 'Aleo', serif, 'Roboto', sans-serif;
+    --fondos-input:  rgba(11, 132, 141, .17);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: url(imagenes/Mar-Cozumel.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+main {
+    display: flex;
+}
+
+#contenedor-izquierdo {
+    font-family: var(--fuente-familia-iz);
+    height: 100vh;
+    width: 35vw;
+}
+
+h1 {
+    margin: 0;
+    background: linear-gradient(150deg, rgba(131, 164, 207, .07), rgba(131, 192, 207, 0.65));
+    text-align: center;
+}
+
+#contenedor-franja {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-size: 30px;
+    background: linear-gradient(25deg, rgba(6, 105, 112, 0.67), rgba(91, 166, 185, 0.65));
+    top: 250px;
+}
+
+#contenedor-franja > p {
+    font-weight:600;
+}
+
+#img-logo {
+    width: 50px;
+    margin: 4px;
+}
+
+/* Estilos de formulario*/
+form {
+    background: linear-gradient(150deg, rgba(131, 192, 207, 0.65), rgba(28, 147, 177, 0.65), rgba(11, 132, 141, 0.65));
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contenedor-entradas {
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+}
+
+label {
+    font-family: var(--fuente-familia-iz);
+    font-weight: bolder;
+}
+
+input, textarea, select, option {
+    background-color:  var(--fondos-input);
+    border: 2px solid #0b6d74;
+}
+
+input:focus, select:focus, textarea:focus {
+    border: none;
+    border: 3px solid var(--color-borde-en-relleno);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.342);
+    outline: none;
+}
+
+input::placeholder {
+    color: rgba(224, 213, 213, 0.85);
+}
+
+form > p {
+    margin-top: 0;
+}
+
+#opinion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form > p{
+    text-align: center;
+    display: flex;
+    font-size: 23px;
+}
+
+button {
+    border: none;
+    border: 2px solid #034449;
+    background-color: #0B848D;
+    color: black;
+    margin-top: 2px;
+    padding: 12px 12px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.342);
+}
+  
+button:hover {
+    background-color: #106e76; /* Cambia el color al pasar el mouse */
+    color: white;
+}
+
+#msj-cuenta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#msj-cuenta > p, a {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+a {
+    color: #033e42;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #012024;
+}
