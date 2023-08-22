@@ -157,3 +157,8 @@ a:hover {
     border: 2px solid var(--color-bordes-correctos);
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.342);
 }
+
+/* Estilos de error */
+.error {
+    color: var(--color-bordes-incorrectos);
+}
