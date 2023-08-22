@@ -146,3 +146,14 @@ a {
 a:hover {
     color: #012024;
 }
+
+/* Bordes valido e invalido */
+.invalido {
+    border: 2px solid var(--color-bordes-incorrectos);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.342);
+}
+
+.valido, .opc {
+    border: 2px solid var(--color-bordes-correctos);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.342);
+}
