@@ -32,31 +32,37 @@
                 <div>
                     <label for="nombre">Nombre(s): </label>
                     <input type="text" id="nombre" placeholder="Sof..." name="nombre" minlength="3" autocomplete="off" required>
+                    <div class="error nombre"></div>
                 </div>
 
                 <div>
                     <label for="apellidos">Apellidos: </label>
                     <input type="text" id="apellidos" placeholder="Gonz..." name="apellidos" minlength="4" autocomplete="off" required>
+                    <div class="error apellidos"></div>
                 </div>
 
                 <div>
                     <label for="email">Email: </label>
                     <input type="email" id="email" placeholder="adas@sss.com" autocomplete="off" required>
+                    <div class="error email"></div>
                 </div>
 
                 <div>
                     <label for="telefono">Telefono: </label>
                     <input type="tel" id="telefono" name="telefono" placeholder="1211222..." pattern="[0-9]{10}" autocomplete="off" required>
+                    <div class="error tel"></div>
                 </div>
 
                 <div>
                     <label for="contraseña">Contraseña: </label>
                     <input type="password" id="contraseña" name="contraseña" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                    <div class="error contra"></div>
                 </div>
 
                 <div>
                     <label for="confirmacion-contraseña">Confirmar contraseña: </label>
                     <input type="password" id="confirmacion-contraseña" name="confirmacion-contraseña" required>
+                    <div class="error confirma"></div>
                 </div>
 
                 <div>
@@ -76,7 +82,7 @@
                     <textarea name="opiniones" id="opiniones" cols="30" rows="5"></textarea>
                 
 
-                    <button type="submit">Entrar</button>
+                    <button id="boton" type="submit">Entrar</button>
                 </div>
 
                 <div id="msj-cuenta">
