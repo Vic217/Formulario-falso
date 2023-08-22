@@ -52,7 +52,7 @@ email.addEventListener("input", (e) => {
     }else{
         e.target.classList.remove("valido");
         e.target.classList.add("invalido");
-        corr[0].innerText = "Este campo requiere al menos un @ y un punto";
+        corr[0].innerText = "Requiere al menos un @ y un punto";
     }
 });
 
@@ -65,7 +65,7 @@ tel.addEventListener("input", (e) => {
     }else{
         e.target.classList.remove("valido");
         e.target.classList.add("invalido");
-        telefono[0].innerText = "Este campo requiere un número de 10 digitos"
+        telefono[0].innerText = "Requiere un número de 10 digitos"
     }
 });
 
@@ -80,7 +80,7 @@ contraseña.addEventListener("input", (e) => {
     } else {
         e.target.classList.remove("valido");
         e.target.classList.add("invalido");
-        contra_or[0].innerText = "La contraseña debe tener un digito numérico, minúscula, mayúscula y un mínimo de 8 caracteres";
+        contra_or[0].innerText = "Requiere digito numérico, minúscula, mayúscula y un mínimo de 8 caracteres";
     }
 });
 
@@ -95,7 +95,7 @@ confirma_contra.addEventListener("input", (e) => {
     } else {
         e.target.classList.remove("valido");
         e.target.classList.add("invalido");
-        confirma[0].innerText = "La contraseña debe coincidir a la anterior";
+        confirma[0].innerText = "Las contraseñas deben coincidir";
     }
 });
 
