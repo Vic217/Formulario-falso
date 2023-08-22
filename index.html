@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de Prueba</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
     <link rel="icon" type="image/svg" href="imagenes/dibujo.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,22 +31,22 @@
 
                 <div>
                     <label for="nombre">Nombre(s): </label>
-                    <input type="text" id="nombre" placeholder="Sof..." name="nombre" minlength="3" required>
+                    <input type="text" id="nombre" placeholder="Sof..." name="nombre" minlength="3" autocomplete="off" required>
                 </div>
 
                 <div>
                     <label for="apellidos">Apellidos: </label>
-                    <input type="text" id="apellidos" placeholder="Gonz..." name="apellidos" minlength="4" required>
+                    <input type="text" id="apellidos" placeholder="Gonz..." name="apellidos" minlength="4" autocomplete="off" required>
                 </div>
 
                 <div>
                     <label for="email">Email: </label>
-                    <input type="email" id="email" placeholder="adas@sss.com" required>
+                    <input type="email" id="email" placeholder="adas@sss.com" autocomplete="off" required>
                 </div>
 
                 <div>
                     <label for="telefono">Telefono: </label>
-                    <input type="tel" id="telefono" name="telefono" placeholder="1211222..." pattern="[0-9]{10}" required>
+                    <input type="tel" id="telefono" name="telefono" placeholder="1211222..." pattern="[0-9]{10}" autocomplete="off" required>
                 </div>
 
                 <div>
